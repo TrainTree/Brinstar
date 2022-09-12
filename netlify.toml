@@ -6,7 +6,7 @@ publish = "public"
 # (Optional) Text in landing page button
 LANDING_BUTTON = "Click for Index 📇"
 # (Optional) Site description on landing page
-LANDING_DESCRIPTION = "Welcome to TrainTree Gold"
+LANDING_DESCRIPTION = "TrainTree Gold"
 # (REQUIRED) The Markdown page linked to landing page button (e.g. put home for ./home.md)
 LANDING_PAGE = "01-index"
 # (Optional) Site title on landing page
