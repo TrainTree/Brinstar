@@ -35,7 +35,29 @@
     <div class="register-link">
       <p>Don't have an account? <a href="#">Register</a></p>
       
+    <div id="password-form">
+        <h2>Please enter the password to access the site:</h2>
+        <input type="password" id="password-input">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
 
+    <div id="site-content" style="display: none;">
+        <!-- Your website content goes here -->
+        <h1>Welcome to My Website!</h1>
+        <p>This is the protected content.</p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password-input").value;
+            if (password === "your_password_here") {
+                document.getElementById("password-form").style.display = "none";
+                document.getElementById("site-content").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
 
 </body>
 </html> 
