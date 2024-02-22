@@ -1,6 +1,6 @@
 exports.handler = async (event, context) => {
   const { password } = JSON.parse(event.body);
-  const rawPassword = "your_raw_password"; // Set your raw password here
+  const rawPassword = "worm"; // Set your raw password here
 
   if (password === rawPassword) {
     return {
