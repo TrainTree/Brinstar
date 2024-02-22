@@ -2,12 +2,6 @@
 // <weight>: Use a value from 400 to 700
 
 
-body {
-  background-image: url('background.png');
-  background-size: cover; /* Adjusts the background image size */
-  /* You can also set other background properties such as background-color, background-repeat, etc. */
-}
-
 
 .pixelify-sans-<uniquifier> {
   font-family: "Pixelify Sans", sans-serif;
@@ -28,8 +22,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: black;
+  background-image: url('background.png');
+  background-repeat: repeat; /* Repeat the background image both horizontally and vertically */
 }
+
+
 
 .wrapper {
   width: 420px;
