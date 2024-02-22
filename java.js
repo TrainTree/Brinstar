@@ -1,21 +1,25 @@
-// validate.js
+document.getElementById('password-form').addEventListener('submit', async function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
 
-exports.handler = async (event, context) => {
-  const { password } = JSON.parse(event.body);
-  const hashedPassword = "b9af17af4fc5708e9ba636512213b9d0cf6f894c0c3ba6e1d970c13a921c5db9"; // Replace with your hashed password
-  
-  if (password === hashedPassword) {
-    return {
-      statusCode: 302, // Redirect status code
+  const password = document.getElementById('password-input').value;
+
+  try {
+    const response = await fetch('/.netlify/functions/validate', {
+      method: 'POST',
       headers: {
-        Location: 'https://github.com/TrainTree/Brinstar/blob/main/index.html', // Redirect location
+        'Content-Type': 'application/json'
       },
-      body: '',
-    };
-  } else {
-    return {
-      statusCode: 401, // Unauthorized status code
-      body: 'Incorrect password. Please try again.',
-    };
+      body: JSON.stringify({ password })
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      window.location.href = data.redirectUrl; // Redirect to the specified URL
+    } else {
+      const errorMessage = await response.text();
+      alert(errorMessage); // Display error message
+    }
+  } catch (error) {
+    console.error('Error:', error);
   }
-};
+});
