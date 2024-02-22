@@ -39,8 +39,8 @@ body {
 /* Other styles remain unchanged */
 .wrapper {
   width: 420px;
-  background: #4C414F;
-  color: orange;
+  background: #4C414F; /* box colour */
+  color: #F76B2F; /* BRINSTAR text colour */
   border-radius: 40px;
   padding: 30px 40px;
 }
