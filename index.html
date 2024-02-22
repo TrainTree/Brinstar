@@ -7,18 +7,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <style>
+    /* Define font family for the custom font */
+    @font-face {
+      font-family: 'MetroidFont'; /* Name of the font family */
+      src: url('https://github.com/TrainTree/Brinstar/blob/main/fonts/super-metroid-intro-snes.ttf') format('truetype'); /* Path to the font file */
+      /* Add more src definitions for other font file formats if necessary */
+      font-weight: normal; /* Font weight */
+      font-style: normal; /* Font style */
+    }
+
+    /* Apply the custom font to the "BRINSTAR" heading */
+    .special-heading {
+      font-family: 'MetroidFont', sans-serif; /* Use the custom font family */
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
     <form id="password-form" action="/.netlify/functions/validate" method="post">
 
-<!-- HTML -->
-<h1 class="special-heading">BRINSTAR</h1>
+      <!-- HTML -->
+      <h1 class="special-heading">BRINSTAR</h1>
 
-
-
-
-      
       <div class="input-box">
         <input type="password" name="password" id="password-input" placeholder="Password" required>
         <i class='bx bxs-lock-alt'></i>
