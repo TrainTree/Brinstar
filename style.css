@@ -3,6 +3,12 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+/* Apply Pixelify Sans font only to the heading with .special-heading class */
+.special-heading {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+
 
 // <uniquifier>: Use a uniquifier for the class name
 // <weight>: Use a value from 400 to 700
