@@ -5,12 +5,15 @@ exports.handler = async (event, context) => {
   if (password === hashedPassword) {
     return {
       statusCode: 200,
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({ redirectUrl: 'https://github.com/TrainTree/Brinstar/blob/main/index.html' }) // Redirect location
     };
   } else {
     return {
       statusCode: 401,
-      body: 'Incorrect password. Please try again.'
+      body: JSON.stringify({ message: 'Incorrect password. Please try again.' }) // Error message
     };
   }
 };
