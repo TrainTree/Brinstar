@@ -15,6 +15,19 @@ body {
 }
 
 
+/* CSS */
+/* Apply Pixelify Sans font to headings with .pixelify-heading class */
+.pixelify-heading {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+/* Apply a different font to other headings */
+h1 {
+  font-family: Arial, sans-serif; /* Example: Use Arial as an alternative font */
+}
+
+
+
 /* Background image settings */
 body {
   background-color: black; /* Fallback background color */
