@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 302, // Redirect status code
       headers: {
-        Location: '/01 Index.md', // Redirect location
+        Location: 'https://github.com/TrainTree/Brinstar/blob/main/index.html', // Redirect location
       },
       body: '',
     };
