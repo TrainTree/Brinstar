@@ -3,10 +3,7 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-/* Apply Pixelify Sans font only to the heading with .special-heading class */
-.special-heading {
-  font-family: "Pixelify Sans", sans-serif;
-}
+
 
 /* Apply a different font to input placeholders */
 ::placeholder {
