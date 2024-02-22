@@ -1,3 +1,42 @@
+/* Define font family globally */
+body {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.pixelify-sans-<uniquifier> {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Specify the desired font weight (e.g., 400 for normal, 700 for bold) */
+  font-style: normal;
+}
+
+/* Background image settings */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('background.png');
+  background-repeat: repeat; /* Repeat the background image both horizontally and vertically */
+}
+
+/* Other styles remain unchanged */
+.wrapper {
+  width: 420px;
+  background: #4d4d4d;
+  color: orange;
+  border-radius: 40px;
+  padding: 30px 40px;
+}
+
+/* Add rest of your CSS rules here */
+
+
+
+
+
+
+
 // <uniquifier>: Use a uniquifier for the class name
 // <weight>: Use a value from 400 to 700
 
@@ -17,24 +56,7 @@
   font-family: "Pixelify Sans", sans-serif;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url('background.png');
-  background-repeat: repeat; /* Repeat the background image both horizontally and vertically */
-}
 
-
-
-.wrapper {
-  width: 420px;
-  background: #4d4d4d;
-  color: orange;
-  border-radius: 40px;
-  padding: 30px 40px;
-}
 
 .wrapper h1 {
   font-size: 36px;
