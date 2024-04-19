@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ redirectUrl: 'https://github.com/TrainTree/Brinstar/blob/main/vline.html' }) // Redirect location
+      body: JSON.stringify({ redirectUrl: 'https://traintree.github.io/VLine/' }) // Redirect location
     };
   } else {
     return {
