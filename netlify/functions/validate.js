@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ redirectUrl: 'https://1drv.ms/o/c/6e78a42f5055b217/EheyVVAvpHgggG6hggAAAAAB1gY8D9gQhUETVEN1Vqardw?e=l2Vqjc' }) // Redirect location
+      body: JSON.stringify({ redirectUrl: 'https://1drv.ms/o/c/6e78a42f5055b217/EheyVVAvpHgggG6hggAAAAAB1gY8D9gQhUETVEN1Vqardw?e=TJacAE' }) // Redirect location
     };
   } else {
     return {
